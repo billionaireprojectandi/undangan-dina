@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { CSSTransition } from "react-transition-group";
@@ -27,6 +27,7 @@ export default function Home() {
   const [displayRekening, setDisplayRekening] = useState(false);
   const [displayLoveStory, setDisplayLoveStory] = useState(false);
   const [playing, setPlaying] = useState(true);
+  const audioRef = useRef();
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -34,6 +35,15 @@ export default function Home() {
       setVisible(true);
     } else if (scrolled <= 212) {
       setVisible(false);
+    }
+  };
+
+  const toggleMusic = (state) => {
+    setPlaying(state);
+    if (!playing) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
     }
   };
 
@@ -65,16 +75,16 @@ export default function Home() {
 
   return (
     <div className="home-wrapper">
-      <ReactHowler
-        src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
-        playing={playing}
+      <audio
+        src="/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"
+        autoPlay={true}
+        ref={audioRef}
         loop={true}
-        volume={0.18}
       />
       <div className="home">
-        <div className="image-top">
+        {/* <div className="image-top">
           <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
-        </div>
+        </div> */}
         <div className="home-background"></div>
 
         <Couple />
@@ -97,16 +107,13 @@ export default function Home() {
 
         <Ucapan />
 
-        <div className="image-bot">
+        {/* <div className="image-bot">
           <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
-        </div>
+        </div> */}
 
         {/* Modal Component below */}
 
-        <MusicIcon
-          playing={playing}
-          setPlaying={(state) => setPlaying(state)}
-        />
+        <MusicIcon playing={playing} setPlaying={toggleMusic} />
 
         <CSSTransition in={visible} unmountOnExit timeout={0} classNames="fade">
           <Navigation />

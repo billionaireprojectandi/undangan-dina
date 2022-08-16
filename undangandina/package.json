@@ -1,10 +1,10 @@
 {
-  "name": "undanganserver",
+  "name": "undangandina",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "buat surat <suratbuat6@gmail.com>",
+  "author": "undangan dina <dinaundangan@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
@@ -14,13 +14,13 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.27.2",
-    "@sanity/core": "^2.27.0",
-    "@sanity/default-layout": "^2.27.2",
-    "@sanity/default-login": "^2.27.0",
-    "@sanity/desk-tool": "^2.27.3",
+    "@sanity/base": "^2.30.5",
+    "@sanity/core": "^2.30.5",
+    "@sanity/default-layout": "^2.30.5",
+    "@sanity/default-login": "^2.30.5",
+    "@sanity/desk-tool": "^2.30.5",
     "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.27.2",
+    "@sanity/vision": "^2.30.5",
     "eslint": "^8.6.0",
     "prop-types": "^15.7",
     "react": "^17.0",
@@ -30,6 +30,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/saputroandi/undangan.git"
+    "url": "git@github-billionaire:billionaireprojectandi/undangan-dina.git"
   }
 }
