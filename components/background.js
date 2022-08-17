@@ -12,9 +12,12 @@ function Background() {
           bottom: 0;
           left: 0;
           z-index: -30;
-          background-color: rgb(191, 146, 112);
+          background-color: rgba(255, 221, 204, 0.3);
           height: 100vh;
           width: 100vw;
+          // background-image: url(/asset/rosegold.jpg);
+          // background-position: center;
+          // background-size: cover;
         }
       `}</style>
     </div>

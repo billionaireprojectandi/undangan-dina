@@ -565,7 +565,7 @@ ZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=="
         .navigation-item {
           width: 3rem;
           padding: 0.5rem;
-          background-color: rgb(191, 146, 112);
+          background-color: rgb(255, 187, 204);
           border-radius: 0.25rem;
           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -574,7 +574,7 @@ ZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=="
 
         .scale-up {
           transform: scale(1.25, 1.25);
-          border: 2px solid rgb(102, 51, 0);
+          border: 2px solid rgb(153, 21, 78);
         }
       `}</style>
     </div>

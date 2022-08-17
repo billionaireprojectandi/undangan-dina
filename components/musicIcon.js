@@ -92,8 +92,8 @@ function MusicIcon(props) {
           height: 2.75rem;
           display: flex;
           justify-content: center;
-          background-color: rgb(254, 251, 243);
-          border: 2px solid rgb(102, 51, 0);
+          background-color: rgba(254, 251, 243, 0.6);
+          border: 2px solid rgb(153, 21, 78);
           padding: 0.35rem;
           border-radius: 50%;
           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,

@@ -230,7 +230,7 @@ function DisplayedGift() {
 
         .copy-rekening {
           padding: 0.5rem 1rem;
-          background-color: rgb(227, 183, 160);
+          background-color: rgb(255, 187, 204);
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           border-radius: 0.25rem;
         }

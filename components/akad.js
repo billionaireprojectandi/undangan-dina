@@ -101,7 +101,7 @@ function Akad() {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: rgb(102, 51, 0);
+            color: rgb(153, 21, 78);
           }
 
           .tanggal-left-section,

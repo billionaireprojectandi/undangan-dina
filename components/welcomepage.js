@@ -11,13 +11,13 @@ function WelcomePage(props) {
       <div className="welcome-page">
         <div className="header">
           <div className="initial" data-aos="fade-right" data-aos-delay="500">
-            <h2>A</h2>
+            <h2>Dina</h2>
           </div>
           <div className="divider" data-aos="fade-down" data-aos-delay="500">
             <h2>&</h2>
           </div>
           <div className="initial" data-aos="fade-left" data-aos-delay="500">
-            <h2>A</h2>
+            <h2>Beni</h2>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="500">
@@ -78,14 +78,14 @@ function WelcomePage(props) {
           display: flex;
           gap: 1rem;
           height: 6rem;
-          font-size: 3em;
+          font-size: 2.5em;
           font-family: "Alex Brush", cursive;
         }
 
         .nama-tamu {
           width: 20rem;
-          height: 8rem;
-          background-color: rgb(211, 222, 220);
+          height: 6rem;
+          background-color: rgba(255, 187, 204, 0.7);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -119,11 +119,11 @@ function WelcomePage(props) {
         @keyframes welcome {
           0% {
             transform: scale(1);
-            background-color: rgb(191, 146, 112);
+            background-color: rgb(255, 187, 204);
           }
           100% {
             transform: scale(1.05);
-            background-color: rgb(206, 171, 147);
+            background-color: rgb(255, 221, 204);
           }
         }
       `}</style>
