@@ -218,7 +218,7 @@ function Gift(props) {
           margin: 0.5rem 0.5rem 0 0;
           border-radius: 50%;
           width: 2rem;
-          background-color: rgb(191, 146, 112);
+          background-color: rgb(255, 187, 204);
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           padding: 0.5rem;
           font-size: 1.25em;
@@ -252,7 +252,7 @@ function Gift(props) {
 
         .copy-rekening {
           padding: 0.5rem 1rem;
-          background-color: rgb(191, 146, 112);
+          background-color: rgb(255, 187, 204);
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           border-radius: 0.25rem;
         }
