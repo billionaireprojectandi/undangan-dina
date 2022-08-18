@@ -168,7 +168,7 @@ function Ucapan() {
           }
 
           .ucapan-data {
-            background-color: rgb(191, 146, 112);
+            background-color: rgb(255, 187, 204);
             width: 95%;
             padding: 1rem;
             margin-bottom: 0.5rem;

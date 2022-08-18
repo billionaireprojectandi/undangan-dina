@@ -2,10 +2,13 @@ import { useState } from "react";
 
 function Gift(props) {
   const [copyStatus, setCopyStatus] = useState(false);
+  const bankAccount = {
+    BSI: "4479505120",
+  };
 
-  const handleCopy = (e) => {
+  const handleCopy = (e, bankName) => {
     e.preventDefault();
-    navigator.clipboard.writeText("7119560467");
+    navigator.clipboard.writeText(bankAccount[bankName]);
     setCopyStatus(true);
     props.setDisplayRekening(false);
   };
@@ -161,10 +164,13 @@ function Gift(props) {
                 </svg>
               </div>
               <div className="owner">
-                a/n <strong>Arum Setyarini</strong>
+                a/n <strong>Dina Anifersari</strong>
               </div>
-              <div className="nomor-rekening">7119560467</div>
-              <div className="copy-rekening" onClick={(e) => handleCopy(e)}>
+              <div className="nomor-rekening">{bankAccount.BSI}</div>
+              <div
+                className="copy-rekening"
+                onClick={(e) => handleCopy(e, "BSI")}
+              >
                 <a>
                   <strong>{copyStatus ? "Tersalin" : "Salin Rekening"}</strong>
                 </a>

@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { CSSTransition } from "react-transition-group";
-import ReactHowler from "react-howler";
 
 import Akad from "../components/akad";
 import Couple from "../components/couple";
@@ -76,7 +75,7 @@ export default function Home() {
   return (
     <div className="home-wrapper">
       <audio
-        src="/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"
+        src="/sound/beautiful_in_white.mp3"
         autoPlay={true}
         ref={audioRef}
         loop={true}
@@ -103,7 +102,7 @@ export default function Home() {
 
         <Protokol />
 
-        <DisplayedGift />
+        {/* <DisplayedGift /> */}
 
         <Ucapan />
 
@@ -119,7 +118,7 @@ export default function Home() {
           <Navigation />
         </CSSTransition>
 
-        {/* <CSSTransition
+        <CSSTransition
           in={visible}
           unmountOnExit
           timeout={500}
@@ -128,7 +127,7 @@ export default function Home() {
           <GiftIcon
             setDisplayRekening={(visible) => setDisplayRekening(visible)}
           />
-        </CSSTransition> */}
+        </CSSTransition>
 
         <CSSTransition
           in={visible}

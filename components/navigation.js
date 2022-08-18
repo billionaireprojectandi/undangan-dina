@@ -241,7 +241,7 @@ m3520 0 l0 -80 -560 0 -560 0 0 80 0 80 560 0 560 0 0 -80z"
                 : "navigation-item"
             }
             onClick={(e) => setTarget("protokol")}
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-delay="500"
           >
             <svg
@@ -324,7 +324,7 @@ l-25 -24 0 -351 0 -351 25 -24 24 -25 591 0 591 0 24 25 25 24 0 351 0 351
             </svg>
           </div>
         </Link>
-        <Link offset={-25} to="gift" smooth={true} duration={1500}>
+        {/* <Link offset={-25} to="gift" smooth={true} duration={1500}>
           <div
             className={
               target == "gift" ? "navigation-item scale-up" : "navigation-item"
@@ -380,7 +380,7 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
               </g>
             </svg>
           </div>
-        </Link>
+        </Link> */}
         <Link offset={-25} to="ucapan" smooth={true} duration={1500}>
           <div
             className={
@@ -569,7 +569,7 @@ ZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=="
           border-radius: 0.25rem;
           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          margin: 0 0.25rem;
+          margin: 0 0.5rem;
         }
 
         .scale-up {
