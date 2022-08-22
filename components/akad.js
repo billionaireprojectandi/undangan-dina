@@ -10,10 +10,10 @@ function Akad() {
       <div data-aos="fade-up" className="akad container">
         <Flower />
         <div className="akad-content">
-          <div className="header">
+          <div className="header" data-aos="zoom-in-up">
             <p>Akad</p>
           </div>
-          <div className="jam">
+          <div className="jam" data-aos="zoom-in-up">
             <div className="jam-header">
               <p>Pukul:</p>
             </div>
@@ -21,7 +21,7 @@ function Akad() {
               <p>{"08:00 - 10:00"} WIB</p>
             </div>
           </div>
-          <div className="tanggal">
+          <div className="tanggal" data-aos="zoom-in-up">
             <div className="tanggal-left-section">
               <p>Sabtu</p>
             </div>
@@ -37,7 +37,7 @@ function Akad() {
               <p>September</p>
             </div>
           </div>
-          <div className="alamat">
+          <div className="alamat" data-aos="zoom-in-up">
             <div className="alamat-header">
               <p>Lokasi Acara:</p>
             </div>

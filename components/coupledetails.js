@@ -6,31 +6,35 @@ function CoupleDetails(props) {
     <div id="couple">
       <div className="couple container" data-aos="fade-up">
         <Flower />
-        <div className="couple-image">
+        <div className="couple-image" data-aos="zoom-in-up">
           <img src="/asset/couple.jpg" alt="couple.jpg" />
+          <img src="/asset/frame_flower.png" alt="frame_flower.png" />
         </div>
         <div className="couple-name">
-          <div className="couple-name-girl">
+          <div className="couple-name-girl" data-aos="zoom-in-up">
             <div className="girl-name">
               <p>Dina Anifer Sari</p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
               <p>Putri Pertama dari</p>
             </div>
-            <div className="couple-parent">
+            <div className="couple-parent" data-aos="zoom-in-up">
               <p>Bapak Sarijo, S.E.</p>
               <p>dan</p>
               <p>Ibu Wiwin Aryani</p>
             </div>
           </div>
+          <div style={{ fontSize: "2em" }} data-aos="zoom-in-up">
+            <p>&</p>
+          </div>
           <div className="couple-name-boy">
-            <div className="boy-name">
+            <div className="boy-name" data-aos="zoom-in-up">
               <p>Beni Setiyadi Saputro</p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
               <p>Putra Ke-Empat dari</p>
             </div>
-            <div className="couple-parent">
+            <div className="couple-parent" data-aos="zoom-in-up">
               <p>Bapak Achmad Surun</p>
               <p>dan</p>
               <p>Ibu Pujiati</p>
@@ -50,16 +54,27 @@ function CoupleDetails(props) {
           .couple {
             margin-bottom: 3rem;
           }
+
           .couple-image {
             width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
             padding: 1.8rem 1rem;
+            position: relative;
+            flex-direction: column;
           }
 
           .couple-image > img {
             width: 100%;
             height: auto;
+            border-radius: 0.5rem;
+          }
+
+          .couple-image > img:nth-child(2) {
+            position: absolute;
+            bottom: -1rem;
+            width: 80%;
           }
 
           .couple-name {

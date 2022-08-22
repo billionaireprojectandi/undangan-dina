@@ -19,6 +19,7 @@ import DisplayedGift from "../components/gift-container";
 import MusicIcon from "../components/musicIcon";
 import WelcomePage from "../components/welcomepage";
 import Navigation from "../components/navigation";
+import Footer from "../components/footer";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -106,6 +107,8 @@ export default function Home() {
 
         <Ucapan />
 
+        <Footer />
+
         {/* <div className="image-bot">
           <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
         </div> */}
@@ -188,12 +191,14 @@ export default function Home() {
           }
 
           .flower {
-            width: 55%;
+            width: 40%;
             // width: 14rem;
             position: absolute;
-            bottom: -2.8rem;
+            bottom: -3.3rem;
             left: -3rem;
             z-index: 20;
+            transform: rotate(65deg);
+            // animation: wiggle 3s linear infinite alternate;
           }
 
           .home {
@@ -266,6 +271,16 @@ export default function Home() {
             right: 0;
             bottom: 0;
             left: 0;
+          }
+
+          @keyframes wiggle {
+            0% {
+              transform: rotate(40deg);
+            }
+
+            100% {
+              transform: rotate(60deg);
+            }
           }
 
           @media only screen and (min-width: 768px) {

@@ -5,10 +5,10 @@ function Prologue() {
   return (
     <div className="container prologue" data-aos="fade-up">
       <Flower />
-      <div className="prologue-image">
+      <div className="prologue-image" data-aos="zoom-in-up">
         <img src="/asset/basmallah.png" alt="basmallah.png" />
       </div>
-      <div className="prologue-content">
+      <div className="prologue-content" data-aos="zoom-in-up">
         <p>
           “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
           pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung

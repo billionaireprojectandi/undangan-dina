@@ -3,54 +3,54 @@ function Falling() {
     <div className="fall-wrapper">
       <div className="set">
         <div>
-          <img src="/asset/flower1.png" />
+          <img src="/asset/flower_1.png" />
         </div>
         <div>
-          <img src="/asset/flower2.png" />
+          <img src="/asset/flower_2.png" />
         </div>
         <div>
-          <img src="/asset/flower2.png" />
+          <img src="/asset/flower_2.png" />
         </div>
         <div>
-          <img src="/asset/flower3.png" />
+          <img src="/asset/flower_3.png" />
         </div>
         <div>
-          <img src="/asset/flower4.png" />
+          <img src="/asset/flower_4.png" />
         </div>
         <div>
-          <img src="/asset/flower4.png" />
+          <img src="/asset/flower_4.png" />
         </div>
         <div>
-          <img src="/asset/flower5.png" />
+          <img src="/asset/flower_5.png" />
         </div>
         <div>
-          <img src="/asset/flower6.png" />
+          <img src="/asset/flower_6.png" />
         </div>
       </div>
       <div className="set set2">
         <div>
-          <img src="/asset/flower1.png" />
+          <img src="/asset/flower_2.png" />
         </div>
         <div>
-          <img src="/asset/flower2.png" />
+          <img src="/asset/flower_3.png" />
         </div>
         <div>
-          <img src="/asset/flower2.png" />
+          <img src="/asset/flower_1.png" />
         </div>
         <div>
-          <img src="/asset/flower3.png" />
+          <img src="/asset/flower_2.png" />
         </div>
         <div>
-          <img src="/asset/flower4.png" />
+          <img src="/asset/flower_4.png" />
         </div>
         <div>
-          <img src="/asset/flower4.png" />
+          <img src="/asset/flower_6.png" />
         </div>
         <div>
-          <img src="/asset/flower5.png" />
+          <img src="/asset/flower_4.png" />
         </div>
         <div>
-          <img src="/asset/flower6.png" />
+          <img src="/asset/flower_5.png" />
         </div>
       </div>
       <style jsx>{`

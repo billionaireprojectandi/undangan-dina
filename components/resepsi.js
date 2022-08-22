@@ -9,13 +9,13 @@ function Resepsi() {
     <div className="resepsi container" data-aos="fade-up">
       <Flower />
       <div className="resepsi-content">
-        <div className="header">
+        <div className="header" data-aos="zoom-in-up">
           <p>Resepsi</p>
         </div>
-        <div className="sesi">
+        <div className="sesi" data-aos="zoom-in-up">
           <p>11:00 - Selesai</p>
         </div>
-        <div className="tanggal">
+        <div className="tanggal" data-aos="zoom-in-up">
           <div className="tanggal-left-section">
             <p>Sabtu</p>
           </div>
@@ -31,7 +31,7 @@ function Resepsi() {
             <p>September</p>
           </div>
         </div>
-        <div className="alamat">
+        <div className="alamat" data-aos="zoom-in-up">
           <div className="alamat-header">
             <p>Lokasi Acara:</p>
           </div>

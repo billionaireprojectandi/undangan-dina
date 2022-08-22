@@ -2,12 +2,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 function Flower() {
   return (
-    // <img
-    //   className="flower"
-    //   src="/asset/btm-container-flower.png"
-    //   alt="btm-container-flower.png"
-    // />
-    <></>
+    <img
+      className="flower"
+      src="/asset/corner_flower.png"
+      alt="btm-container-flower.png"
+    />
   );
 }
 

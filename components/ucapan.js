@@ -51,12 +51,12 @@ function Ucapan() {
     <div id="ucapan">
       <div className="ucapan container" data-aos="fade-up">
         <div className="ucapan-wrapper">
-          <div className="header">
+          <div className="header" data-aos="zoom-in-up">
             <p>Ucapan & Doa</p>
           </div>
 
           {!write && (
-            <div className="input-fields">
+            <div className="input-fields" data-aos="zoom-in-up">
               <div>
                 <div className="input-label">
                   <p>Nama:</p>
@@ -87,7 +87,7 @@ function Ucapan() {
             </div>
           )}
 
-          <div className="ucapan-container">
+          <div className="ucapan-container" data-aos="zoom-in-up">
             <div className="ucapan-content">
               {data.map((currentData, idx) => {
                 return (
@@ -106,6 +106,10 @@ function Ucapan() {
         </div>
 
         <style jsx>{`
+          .ucapan {
+            margin-bottom: 3rem;
+          }
+
           .ucapan-wrapper {
             display: flex;
             flex-direction: column;
