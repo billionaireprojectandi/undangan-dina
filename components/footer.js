@@ -6,12 +6,12 @@ function Footer() {
       <div className="footer">
         <div className="footer-wrapper">
           <div className="footer-container">
-            <div className="creator" data-aos="zoom-in-up">
+            <div className="creator">
               <p>
                 <strong>By aswebinaja</strong>
               </p>
             </div>
-            <div className="contact" data-aos="zoom-in-up">
+            <div className="contact">
               {/* <div className="contact-whatsapp-icon"></div> */}
               <a
                 href="https://wa.me/6283894420949"

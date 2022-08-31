@@ -20,6 +20,7 @@ import MusicIcon from "../components/musicIcon";
 import WelcomePage from "../components/welcomepage";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
+import Head from "next/head";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -60,21 +61,65 @@ export default function Home() {
 
   if (displayWelcomePage) {
     return (
-      <CSSTransition
-        in={displayWelcomePage}
-        unmountOnExit
-        timeout={500}
-        classNames="fade"
-      >
-        <WelcomePage
-          setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
-        />
-      </CSSTransition>
+      <>
+        <Head>
+          <meta property="og:title" content="Dina Beni" />
+          <meta name="twitter:title" content="Dina Beni" />
+
+          <meta name="description" content="The Wedding of Dina Beni" />
+          <meta property="og:description" content="The Wedding of Dina Beni" />
+          <meta name="twitter:description" content="The Wedding of Dina Beni" />
+
+          <meta
+            property="og:image"
+            content="https://dina-beni.vercel.app/asset/couple.jpg"
+          />
+          <meta
+            name="twitter:image"
+            content="https://dina-beni.vercel.app/asset/couple.jpg"
+          />
+
+          <link rel="icon" href="/asset/bouquet.png" />
+
+          <title>Dina Beni</title>
+        </Head>
+        <CSSTransition
+          in={displayWelcomePage}
+          unmountOnExit
+          timeout={500}
+          classNames="fade"
+        >
+          <WelcomePage
+            setDisplayWelcomePage={(visible) => setDisplayWelcomePage(visible)}
+          />
+        </CSSTransition>
+      </>
     );
   }
 
   return (
     <div className="home-wrapper">
+      <Head>
+        <meta property="og:title" content="Dina Beni" />
+        <meta name="twitter:title" content="Dina Beni" />
+
+        <meta name="description" content="The Wedding of Dina Beni" />
+        <meta property="og:description" content="The Wedding of Dina Beni" />
+        <meta name="twitter:description" content="The Wedding of Dina Beni" />
+
+        <meta
+          property="og:image"
+          content="https://dina-beni.vercel.app/asset/couple.jpg"
+        />
+        <meta
+          name="twitter:image"
+          content="https://dina-beni.vercel.app/asset/couple.jpg"
+        />
+
+        <link rel="icon" href="/asset/bouquet.png" />
+
+        <title>Dina Beni</title>
+      </Head>
       <audio
         src="/sound/beautiful_in_white.mp3"
         autoPlay={true}
